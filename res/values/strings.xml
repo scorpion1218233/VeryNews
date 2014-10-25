@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">非常新闻</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_recommend">推荐</string>
+    <string name="main_hot">热点</string>
+    <string name="main_entertainment">娱乐</string>
+    <string name="main_sports">体育</string>
+    <string name="main_social">社会</string>
+    <string name="main_internet">互联网</string>
+    <string name="mian_car">汽车</string>
+    <string name="main_digit">数码</string>
+    <string name="main_military">军事</string>
+    <string name="main_economics">财经</string>
+
+</resources>

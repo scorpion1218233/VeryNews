@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/default_head" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_circle" />
+        </FrameLayout>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_special_news" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/ibtn_user" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_red_light"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@drawable/article_page_bottom_layout_bg"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:id="@+id/main_scrollview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/btnGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/main_recommend_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/title_btn_click_bg"
+                    android:textColor="@android:color/holo_red_light"
+                    android:text="@string/main_recommend" />
+
+                <Button
+                    android:id="@+id/main_hot_btn"
+                    style="@style/MainButton"
+                    android:text="@string/main_hot" />
+
+                <Button
+                    android:id="@+id/main_entertainment_btn"
+                    style="@style/MainButton"
+                    android:text="@string/main_entertainment" />
+
+                <Button
+                    android:id="@+id/main_sports_btn"
+                    style="@style/MainButton"
+                    android:text="@string/main_sports" />
+
+                <Button
+                    android:id="@+id/main_social_btn"
+                    style="@style/MainButton"
+                    android:text="@string/main_social" />
+
+                <Button
+                    android:id="@+id/main_internet_btn"
+                    style="@style/MainButton"
+                    android:text="@string/main_internet" />
+
+                <Button
+                    android:id="@+id/main_car_btn"
+                    style="@style/MainButton"
+                    android:text="@string/mian_car" />
+
+                <Button
+                    android:id="@+id/main_digit_btn"
+                    style="@style/MainButton"
+                    android:text="@string/main_digit" />
+
+                <Button
+                    android:id="@+id/main_military_btn"
+                    style="@style/MainButton"
+                    android:text="@string/main_military" />
+
+                <Button
+                    android:id="@+id/main_economics_btn"
+                    style="@style/MainButton"
+                    android:text="@string/main_economics" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/ic_news_tab_add" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="150"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
